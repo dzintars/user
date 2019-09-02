@@ -25,6 +25,6 @@ CMD ["./main", "-grpc-port=9090", "-http-port=8080", "-log-level=-1", "-log-time
 
 # docker build --rm -t oswee/user-command-gateway:latest . -f build/Dockerfile
 
-# docker run --rm -it -p 9090:9090/tcp -p 8080:8080/tcp oswee/signup-command-gateway:latest // Runs in interactive mode (see the logs)
+# docker run --rm -it -p 9090:9090/tcp -p 8080:8080/tcp oswee/user-command-gateway:latest // Runs in interactive mode (see the logs)
 # docker run --rm -it -d -p 9090:9090/tcp -p 8080:8080/tcp oswee/signup-command-gateway:latest // Runs in deattached (background) mode
-# docker run --rm -it -d -p 9090:9090/tcp -p 8080:8080/tcp --name signup-command-gateway oswee/signup-command-gateway:latest // Custom container name
+# docker run --rm -it -d -p 9090:9090/tcp -p 8080:8080/tcp --name user-command-gateway oswee/user-command-gateway:latest // Custom container name
